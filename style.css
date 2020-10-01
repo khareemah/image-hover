@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #111;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  width: 33.3%;
+  filter: grayscale(100%);
+  transition: 1s ease all;
+}
+.container:hover img {
+  transform: scale(0.8) rotate(20deg);
+}
+.container img:hover {
+  transform: scale(1) rotate(0deg);
+  filter: grayscale(0);
+}
